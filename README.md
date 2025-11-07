@@ -1,0 +1,2 @@
+# DiscordRand
+Random discord Bot
