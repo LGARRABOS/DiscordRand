@@ -1,9 +1,17 @@
-import nextcord
-from nextcord.ext import commands
+import os
 import random
 
-# Ton token ici
-TOKEN = 'TON_TOKEN_ICI'
+import nextcord
+from nextcord.ext import commands
+
+# Récupération du token via la variable d'environnement DISCORD_TOKEN
+TOKEN = os.getenv("DISCORD_TOKEN")
+
+if not TOKEN:
+    raise RuntimeError(
+        "Le token Discord est introuvable. Défini la variable d'environnement "
+        "DISCORD_TOKEN avant de lancer le bot."
+    )
 
 # Intents pour gérer les permissions de message
 intents = nextcord.Intents.default()
