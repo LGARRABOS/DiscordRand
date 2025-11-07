@@ -3,7 +3,7 @@ from nextcord.ext import commands
 import random
 
 # Ton token ici
-TOKEN = 'MTI5OTczNjcwNzIzMDU5NzI1Mg.GAeHB4.Xqa8cuIwmwnBYluWZGI6sXuSgXO_u0bTaVJVss'
+TOKEN = 'TON_TOKEN_ICI'
 
 # Intents pour gérer les permissions de message
 intents = nextcord.Intents.default()
